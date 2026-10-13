@@ -1,0 +1,143 @@
+--- Job ModelR_AS.gms Start 10/10/26 08:21:30 52.4.0 d810124c WEX-WEI x86 64bit/MS Windows
+--- Applying:
+    D:\Chaitra\Programs\GAMS\gmsprmNT.txt
+--- GAMS Parameters defined
+    Input "D:\Chaitra\thesis_runs\runs\Hydro Reduction\ModelR_2018_HydroScale_0.25\ModelR_AS.gms"
+    Output "D:\Chaitra\thesis_runs\runs\Hydro Reduction\ModelR_2018_HydroScale_0.25\ModelR_2018_HydroScale_0.25.lst"
+    ScrDir "D:\Chaitra\thesis_runs\runs\Hydro Reduction\ModelR_2018_HydroScale_0.25\225a\"
+    SysDir D:\Chaitra\Programs\GAMS\
+    LogOption 2
+    LogFile "D:\Chaitra\thesis_runs\runs\Hydro Reduction\ModelR_2018_HydroScale_0.25\run.log"
+    AppendLog 1
+Licensee: Afzal Siddiqui                                 G260902+0003Ac-GEN
+          Stockholm University                                      DCE5282
+          225a\gamslice.dat
+          453eb9d2-b29a-43cf
+          node:41488306 mem:16 cores:8 ipport:58812 v:2                    
+          Course license for use within the course and related course work
+          The time-limited license stops working on : Apr 30, 2027
+System information: 8 physical cores and 16 Gb physical memory detected
+GAMS 52.4.0   Copyright (C) 1987-2026 GAMS Development. All rights reserved
+--- Starting compilation
+--- ModelR_AS.gms(21) 2 Mb
+--- > Nordic_data_ModelR_AS.gms(94) 4 Mb
+--- GDXin=D:\Chaitra\thesis_runs\runs\Hydro Reduction\ModelR_2018_HydroScale_0.25\consumption_se_2018.gdx
+--- GDX File ($gdxIn) D:\Chaitra\thesis_runs\runs\Hydro Reduction\ModelR_2018_HydroScale_0.25\consumption_se_2018.gdx
+--- > Nordic_data_ModelR_AS.gms(101) 5 Mb
+--- GDXin=D:\Chaitra\thesis_runs\runs\Hydro Reduction\ModelR_2018_HydroScale_0.25\prices_se_2018.gdx
+--- GDX File ($gdxIn) D:\Chaitra\thesis_runs\runs\Hydro Reduction\ModelR_2018_HydroScale_0.25\prices_se_2018.gdx
+--- > Nordic_data_ModelR_AS.gms(137) 7 Mb
+--- GDXin=D:\Chaitra\thesis_runs\runs\Hydro Reduction\ModelR_2018_HydroScale_0.25\netimport_se_2018.gdx
+--- GDX File ($gdxIn) D:\Chaitra\thesis_runs\runs\Hydro Reduction\ModelR_2018_HydroScale_0.25\netimport_se_2018.gdx
+--- > Nordic_data_ModelR_AS.gms(314) 8 Mb
+--- GDXin=D:\Chaitra\thesis_runs\runs\Hydro Reduction\ModelR_2018_HydroScale_0.25\vre_se_2018.gdx
+--- GDX File ($gdxIn) D:\Chaitra\thesis_runs\runs\Hydro Reduction\ModelR_2018_HydroScale_0.25\vre_se_2018.gdx
+--- > Nordic_data_ModelR_AS.gms(381) 10 Mb
+--- GDXin=D:\Chaitra\thesis_runs\runs\Hydro Reduction\ModelR_2018_HydroScale_0.25\inflow_ror_se_2018.gdx
+--- GDX File ($gdxIn) D:\Chaitra\thesis_runs\runs\Hydro Reduction\ModelR_2018_HydroScale_0.25\inflow_ror_se_2018.gdx
+--- > Nordic_data_ModelR_AS.gms(401) 10 Mb
+--- GDXin=D:\Chaitra\thesis_runs\runs\Hydro Reduction\ModelR_2018_HydroScale_0.25\inflow_res_se_2018.gdx
+--- GDX File ($gdxIn) D:\Chaitra\thesis_runs\runs\Hydro Reduction\ModelR_2018_HydroScale_0.25\inflow_res_se_2018.gdx
+--- > Nordic_data_ModelR_AS.gms(496) 11 Mb
+--- ModelR_AS.gms(407) 11 Mb
+--- Starting execution: elapsed 0:00:00.057
+--- ModelR_AS.gms(635) 48 Mb
+--- Generating QCP model GEP_QP
+--- ModelR_AS.gms(637) 216 Mb
+---   595,697 rows  429,273 columns  1,747,772 non-zeroes
+---   245,282 nl-code  35,040 nl-non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 7.991E-02, 4.025E+06] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.315E-07, 1.213E+05]
+--- ModelR_AS.gms(637) 213 Mb
+--- Executing GUROBI (Solvelink=2): elapsed 0:00:05.384
+
+    Gurobi           52.4.0 d810124c Jan 14, 2026          WEI x86 64bit/MS Window
+
+... GAMS/Gurobi full license.
+... GMO Q Extraction (ThreePass): 0.33s
+
+    Gurobi Optimizer version 13.0.0 build v13.0.0rc1 (win64 - Windows 11+.0 (26200.2))
+    
+    CPU model: AMD Ryzen 7 7435HS, instruction set [SSE2|AVX|AVX2]
+    Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+    
+    Non-default parameters:
+    MIPGap  0
+    MIPGapAbs  0
+    LogToConsole  0
+    
+    Optimize a model with 595696 rows, 429272 columns and 1625101 nonzeros (Max)
+    Model fingerprint: 0x06ec04d2
+    Model has 122670 linear objective coefficients
+    Model has 35040 quadratic objective terms
+    Coefficient statistics:
+      Matrix range     [1e-07, 1e+00]
+      Objective range  [2e+01, 1e+05]
+      QObjective range [3e-03, 2e+00]
+      Bounds range     [0e+00, 0e+00]
+      RHS range        [8e-02, 4e+06]
+    Presolve removed 162174 rows and 127688 columns
+    Presolve time: 0.76s
+    Presolved: 433522 rows, 301584 columns, 1300203 nonzeros
+    Presolved model has 35040 quadratic objective terms
+    Ordering time: 0.29s
+    
+    Barrier statistics:
+     Dense cols : 22
+     AA' NZ     : 1.822e+06
+     Factor NZ  : 8.072e+06 (roughly 360 MB of memory)
+     Factor Ops : 2.887e+08 (less than 1 second per iteration)
+     Threads    : 8
+    
+                      Objective                Residual
+    Iter       Primal          Dual         Primal    Dual     Compl     Time
+       0  -7.81027420e+17  8.20449052e+17  5.67e+05 2.80e+05  9.02e+08     2s
+       1  -5.37643940e+17  5.73127814e+17  4.62e+05 2.28e+05  7.38e+08     2s
+       2  -4.91027184e+17  5.25519130e+17  4.39e+05 2.17e+05  7.02e+08     2s
+       3  -4.28067124e+17  4.61402866e+17  4.10e+05 2.03e+05  6.94e+08     2s
+       4  -3.06577434e+17  3.37309587e+17  3.42e+05 1.69e+05  6.61e+08     2s
+       5  -2.73011156e+16  4.40656278e+16  7.05e+04 3.48e+04  2.10e+08     3s
+       6  -1.57431410e+15  6.18337213e+15  1.11e+04 5.49e+03  3.87e+07     3s
+       7  -1.39339068e+14  1.57852724e+15  2.37e+03 1.17e+03  9.35e+06     3s
+       8  -2.00133249e+13  6.32065477e+14  6.74e+02 3.33e+02  3.08e+06     3s
+       9  -2.40477775e+12  2.48277830e+14  1.54e+02 7.63e+01  8.48e+05     4s
+      10  -1.70402974e+11  1.21155657e+14  4.06e+01 2.01e+01  2.93e+05     4s
+      11   2.99512513e+10  6.15159486e+13  1.09e+01 5.40e+00  1.11e+05     4s
+      12   2.95960153e+10  1.94840130e+13  2.08e+00 1.03e+00  2.86e+04     4s
+      13   2.93011189e+10  3.08664906e+12  2.06e-01 1.02e-01  4.04e+03     4s
+      14   3.24458903e+10  6.20615636e+11  3.09e-02 1.53e-02  7.58e+02     5s
+      15   3.67174244e+10  2.97358547e+11  8.89e-03 4.40e-03  3.33e+02     5s
+      16   3.99890879e+10  1.28265042e+11  1.90e-03 9.39e-04  1.12e+02     5s
+      17   4.27296585e+10  6.86452499e+10  3.92e-04 1.94e-04  3.27e+01     5s
+      18   4.43857047e+10  5.59736904e+10  1.22e-04 6.03e-05  1.46e+01     5s
+      19   4.51984800e+10  5.13958313e+10  5.46e-05 2.70e-05  7.79e+00     6s
+      20   4.57010119e+10  4.90200099e+10  2.54e-05 1.25e-05  4.17e+00     6s
+      21   4.58937639e+10  4.82653180e+10  1.62e-05 8.03e-06  2.98e+00     6s
+      22   4.61264857e+10  4.73697927e+10  7.29e-06 3.60e-06  1.56e+00     6s
+      23   4.62854159e+10  4.68066238e+10  3.79e-06 1.29e-06  6.54e-01     6s
+      24   4.63502615e+10  4.66113851e+10  2.33e-06 5.47e-07  3.28e-01     7s
+      25   4.63811199e+10  4.65217125e+10  1.18e-06 2.59e-07  1.76e-01     7s
+      26   4.63959488e+10  4.64795013e+10  6.24e-07 1.37e-07  1.05e-01     7s
+      27   4.64052134e+10  4.64533075e+10  3.24e-07 6.95e-08  6.04e-02     7s
+      28   4.64134155e+10  4.64302258e+10  8.10e-08 1.74e-08  2.11e-02     8s
+      29   4.64170892e+10  4.64200302e+10  7.59e-09 1.67e-09  3.69e-03     8s
+      30   4.64177908e+10  4.64182119e+10  8.13e-10 1.78e-10  5.29e-04     8s
+      31   4.64178878e+10  4.64179756e+10  2.34e-10 1.89e-10  1.10e-04     9s
+      32   4.64179129e+10  4.64179189e+10  2.33e-10 1.56e-10  7.54e-06     9s
+      33   4.64179146e+10  4.64179149e+10  1.60e-09 1.86e-09  3.70e-07     9s
+      34   4.64179147e+10  4.64179147e+10  1.98e-09 3.43e-09  2.98e-08     9s
+      35   4.64179147e+10  4.64179147e+10  2.23e-07 2.41e-09  5.26e-09    10s
+    
+    Barrier solved model in 35 iterations and 9.72 seconds (7.71 work units)
+    Optimal objective 4.64179147e+10
+    
+    
+    User-callback calls 0, time in user-callback 0.00 sec
+
+--- Reading solution for model GEP_QP
+--- Executing after solve: elapsed 0:00:19.650
+--- ModelR_AS.gms(903) 219 Mb
+*** Status: Normal completion
+--- Job ModelR_AS.gms Stop 10/10/26 08:21:50 elapsed 0:00:20.375

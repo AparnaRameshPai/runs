@@ -1,0 +1,60 @@
+GAMS 52.4.0  d810124c Jan 14, 2026          WEX-WEI x86 64bit/MS Windows - 10/10/26 08:20:37 Page 1
+G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
+C o m p i l a t i o n
+
+
+   1  Sets n, w, t;
+GDXIN   D:\Chaitra\thesis_runs\runs\_hydro_build_check\ModelF_0.25\base.gdx
+--- LOAD  n = 5:n
+--- LOAD  w = 8:w
+--- LOAD  t = 6:t
+   4  Parameters Yb(n,w), Xb(n,w), Mb(n,w), Nb(n,w), Ab(n,t,w), Rb(n,t), Sb(n,t);
+--- LOAD  Yb = 65:Y_hyd
+--- LOAD  Xb = 76:RR_max
+--- LOAD  Mb = 77:RR_min
+--- LOAD  Nb = 80:RR_ini
+--- LOAD  Ab = 88:I
+--- LOAD  Rb = 83:II_hourly_ror
+--- LOAD  Sb = 86:II_hourly_res
+   7  Parameters Yh(n,w), Xh(n,w), Mh(n,w), Nh(n,w), Ah(n,t,w), Rh(n,t), Sh(n,t);
+GDXIN   D:\Chaitra\thesis_runs\runs\_hydro_build_check\ModelF_0.25\hyd.gdx
+--- LOAD  Yh = 65:Y_hyd
+--- LOAD  Xh = 76:RR_max
+--- LOAD  Mh = 77:RR_min
+--- LOAD  Nh = 80:RR_ini
+--- LOAD  Ah = 88:I
+--- LOAD  Rh = 83:II_hourly_ror
+--- LOAD  Sh = 86:II_hourly_res
+  11  Scalar h /0.25/, maxdiff;
+  12  maxdiff = SUM((n,w), ABS(Yh(n,w) - Yb(n,w)*h) + ABS(Xh(n,w) - Xb(n,w)*h) + ABS(Mh(n,w) - Mb(n,w)*h) + ABS(Nh(n,w) - Nb(n,w)*h))
+  13          + SUM((n,t,w), ABS(Ah(n,t,w) - Ab(n,t,w)*h))
+  14          + SUM((n,t), ABS(Rh(n,t) - Rb(n,t)*h) + ABS(Sh(n,t) - Sb(n,t)*h));
+  15  execute_unload 'check.gdx', maxdiff;
+  16  abort$(maxdiff > 0) 'hydro scaling is not exactly baseline x scale', maxdiff;
+GAMS 52.4.0  d810124c Jan 14, 2026          WEX-WEI x86 64bit/MS Windows - 10/10/26 08:20:37 Page 2
+G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
+Include File Summary
+
+
+   SEQ   GLOBAL TYPE      PARENT   LOCAL  INCLVL  FILENAME
+
+     1        1 INPUT          0       0       0  D:\Chaitra\thesis_runs\runs\_hydro_build_check\ModelF_0.25\check.gms
+     2        2 GDXIN          1       2       0  D:\Chaitra\thesis_runs\runs\_hydro_build_check\ModelF_0.25\base.gdx
+     3        8 GDXIN          1       8       0  D:\Chaitra\thesis_runs\runs\_hydro_build_check\ModelF_0.25\hyd.gdx
+
+
+COMPILATION TIME     =        0.047 SECONDS     12 MB  52.4.0 d810124c WEX-WEI
+GAMS 52.4.0  d810124c Jan 14, 2026          WEX-WEI x86 64bit/MS Windows - 10/10/26 08:20:37 Page 3
+G e n e r a l   A l g e b r a i c   M o d e l i n g   S y s t e m
+E x e c u t i o n
+
+
+USER: Afzal Siddiqui                                 G260902+0003Ac-GEN
+      Stockholm University                                      DCE5282
+      License for teaching and research at degree granting institutions
+
+
+**** FILE SUMMARY
+
+Input      D:\Chaitra\thesis_runs\runs\_hydro_build_check\ModelF_0.25\check.gms
+Output     D:\Chaitra\thesis_runs\runs\_hydro_build_check\ModelF_0.25\check.lst

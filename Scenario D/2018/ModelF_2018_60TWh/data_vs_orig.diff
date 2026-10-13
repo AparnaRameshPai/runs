@@ -1,0 +1,8 @@
+--- orig/Nordic_data_ModelF_new.gms
++++ Scenario D/2018/ModelF_2018_60TWh/Nordic_data_ModelF_new.gms
+@@ -262 +262 @@
+-S_ini(N)$n_nuc(N) = 48141000 / (1 - S_min_frac);
++S_ini(N)$n_nuc(N) = 60000000 / (1 - S_min_frac);
+@@ -523 +523 @@
+-Scalar VRE_Scenario /1/;
++Scalar VRE_Scenario /0/;

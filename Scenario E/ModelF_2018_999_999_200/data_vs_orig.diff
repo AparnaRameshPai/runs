@@ -1,0 +1,13 @@
+--- orig/Nordic_data_ModelF_new.gms
++++ Scenario E/ModelF_2018_999_999_200/Nordic_data_ModelF_new.gms
+@@ -226,2 +226,2 @@
+-    C_daily         Maximum cycles per reactor per day     /2/
+-    C_weekly        Maximum cycles per reactor per week     /5/
++    C_daily         Maximum cycles per reactor per day     /999/
++    C_weekly        Maximum cycles per reactor per week     /999/
+@@ -262 +262 @@
+-S_ini(N)$n_nuc(N) = 48141000 / (1 - S_min_frac);
++S_ini(N)$n_nuc(N) = 68102000 / (1 - S_min_frac);
+@@ -523 +523 @@
+-Scalar VRE_Scenario /1/;
++Scalar VRE_Scenario /0/;

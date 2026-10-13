@@ -1,0 +1,5 @@
+--- orig/Nordic_data_ModelR_AS.gms
++++ Scenario A/ModelR_AS_VRE_0.25/Nordic_data_ModelR_AS.gms
+@@ -478 +478 @@
+-Scalar VRE_Scenario /1/;
++Scalar VRE_Scenario /0.25/;

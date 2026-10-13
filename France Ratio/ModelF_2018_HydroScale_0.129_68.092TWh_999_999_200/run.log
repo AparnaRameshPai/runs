@@ -1,0 +1,152 @@
+--- Job ModelF_new.gms Start 10/10/26 08:40:14 52.4.0 d810124c WEX-WEI x86 64bit/MS Windows
+--- Applying:
+    D:\Chaitra\Programs\GAMS\gmsprmNT.txt
+--- GAMS Parameters defined
+    Input "D:\Chaitra\thesis_runs\runs\France Ratio\ModelF_2018_HydroScale_0.129_68.092TWh_999_999_200\ModelF_new.gms"
+    Output "D:\Chaitra\thesis_runs\runs\France Ratio\ModelF_2018_HydroScale_0.129_68.092TWh_999_999_200\ModelF_2018_HydroScale_0.129_68.092TWh_999_999_200.lst"
+    ScrDir "D:\Chaitra\thesis_runs\runs\France Ratio\ModelF_2018_HydroScale_0.129_68.092TWh_999_999_200\225a\"
+    SysDir D:\Chaitra\Programs\GAMS\
+    LogOption 2
+    LogFile "D:\Chaitra\thesis_runs\runs\France Ratio\ModelF_2018_HydroScale_0.129_68.092TWh_999_999_200\run.log"
+    AppendLog 1
+Licensee: Afzal Siddiqui                                 G260902+0003Ac-GEN
+          Stockholm University                                      DCE5282
+          225a\gamslice.dat
+          453eb9d2-b29a-43cf
+          node:41488306 mem:16 cores:8 ipport:57814 v:2                    
+          Course license for use within the course and related course work
+          The time-limited license stops working on : Apr 30, 2027
+System information: 8 physical cores and 16 Gb physical memory detected
+GAMS 52.4.0   Copyright (C) 1987-2026 GAMS Development. All rights reserved
+--- Starting compilation
+--- ModelF_new.gms(21) 2 Mb
+--- > Nordic_data_ModelF_new.gms(92) 4 Mb
+--- GDXin=D:\Chaitra\thesis_runs\runs\France Ratio\ModelF_2018_HydroScale_0.129_68.092TWh_999_999_200\consumption_se_2018.gdx
+--- GDX File ($gdxIn) D:\Chaitra\thesis_runs\runs\France Ratio\ModelF_2018_HydroScale_0.129_68.092TWh_999_999_200\consumption_se_2018.gdx
+--- > Nordic_data_ModelF_new.gms(97) 5 Mb
+--- GDXin=D:\Chaitra\thesis_runs\runs\France Ratio\ModelF_2018_HydroScale_0.129_68.092TWh_999_999_200\prices_se_2018.gdx
+--- GDX File ($gdxIn) D:\Chaitra\thesis_runs\runs\France Ratio\ModelF_2018_HydroScale_0.129_68.092TWh_999_999_200\prices_se_2018.gdx
+--- > Nordic_data_ModelF_new.gms(131) 7 Mb
+--- GDXin=D:\Chaitra\thesis_runs\runs\France Ratio\ModelF_2018_HydroScale_0.129_68.092TWh_999_999_200\netimport_se_2018.gdx
+--- GDX File ($gdxIn) D:\Chaitra\thesis_runs\runs\France Ratio\ModelF_2018_HydroScale_0.129_68.092TWh_999_999_200\netimport_se_2018.gdx
+--- > Nordic_data_ModelF_new.gms(357) 8 Mb
+--- GDXin=D:\Chaitra\thesis_runs\runs\France Ratio\ModelF_2018_HydroScale_0.129_68.092TWh_999_999_200\vre_se_2018.gdx
+--- GDX File ($gdxIn) D:\Chaitra\thesis_runs\runs\France Ratio\ModelF_2018_HydroScale_0.129_68.092TWh_999_999_200\vre_se_2018.gdx
+--- > Nordic_data_ModelF_new.gms(424) 10 Mb
+--- GDXin=D:\Chaitra\thesis_runs\runs\France Ratio\ModelF_2018_HydroScale_0.129_68.092TWh_999_999_200\inflow_ror_se_2018.gdx
+--- GDX File ($gdxIn) D:\Chaitra\thesis_runs\runs\France Ratio\ModelF_2018_HydroScale_0.129_68.092TWh_999_999_200\inflow_ror_se_2018.gdx
+--- > Nordic_data_ModelF_new.gms(444) 10 Mb
+--- GDXin=D:\Chaitra\thesis_runs\runs\France Ratio\ModelF_2018_HydroScale_0.129_68.092TWh_999_999_200\inflow_res_se_2018.gdx
+--- GDX File ($gdxIn) D:\Chaitra\thesis_runs\runs\France Ratio\ModelF_2018_HydroScale_0.129_68.092TWh_999_999_200\inflow_res_se_2018.gdx
+--- > Nordic_data_ModelF_new.gms(542) 11 Mb
+--- ModelF_new.gms(594) 11 Mb
+--- Starting execution: elapsed 0:00:00.038
+--- ModelF_new.gms(785) 49 Mb
+--- Generating QCP model GEP_QP
+--- ModelF_new.gms(787) 221 Mb
+---   648,678 rows  464,313 columns  1,861,653 non-zeroes
+---   245,282 nl-code  35,040 nl-non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 4.123E-02, 7.566E+07] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.315E-07, 1.213E+05]
+--- ModelF_new.gms(787) 218 Mb
+--- Executing GUROBI (Solvelink=2): elapsed 0:00:05.542
+
+    Gurobi           52.4.0 d810124c Jan 14, 2026          WEI x86 64bit/MS Window
+
+... GAMS/Gurobi full license.
+... GMO Q Extraction (ThreePass): 0.34s
+
+    Gurobi Optimizer version 13.0.0 build v13.0.0rc1 (win64 - Windows 11+.0 (26200.2))
+    
+    CPU model: AMD Ryzen 7 7435HS, instruction set [SSE2|AVX|AVX2]
+    Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+    
+    Non-default parameters:
+    MIPGap  0
+    MIPGapAbs  0
+    LogToConsole  0
+    
+    Optimize a model with 648677 rows, 464312 columns and 1730222 nonzeros (Max)
+    Model fingerprint: 0x8f1dda5e
+    Model has 131430 linear objective coefficients
+    Model has 35040 quadratic objective terms
+    Coefficient statistics:
+      Matrix range     [1e-07, 1e+00]
+      Objective range  [1e-02, 1e+05]
+      QObjective range [3e-03, 2e+00]
+      Bounds range     [0e+00, 0e+00]
+      RHS range        [4e-02, 8e+07]
+    Presolve removed 223489 rows and 153962 columns
+    Presolve time: 0.85s
+    Presolved: 425188 rows, 310350 columns, 1308952 nonzeros
+    Presolved model has 35040 quadratic objective terms
+    Ordering time: 0.31s
+    
+    Barrier statistics:
+     Dense cols : 22
+     AA' NZ     : 1.788e+06
+     Factor NZ  : 8.308e+06 (roughly 400 MB of memory)
+     Factor Ops : 2.953e+08 (less than 1 second per iteration)
+     Threads    : 8
+    
+                      Objective                Residual
+    Iter       Primal          Dual         Primal    Dual     Compl     Time
+       0  -1.11351426e+20  1.11365943e+20  1.48e+10 3.38e+06  5.20e+09     2s
+       1  -7.24580609e+19  7.24717155e+19  1.20e+10 2.73e+06  4.21e+09     2s
+       2  -6.55340115e+19  6.55474745e+19  1.14e+10 2.59e+06  4.00e+09     2s
+       3  -5.73883001e+19  5.74016991e+19  1.06e+10 2.43e+06  4.00e+09     2s
+       4  -4.25343573e+19  4.25478978e+19  9.14e+09 2.09e+06  3.86e+09     3s
+       5  -1.26849487e+18  1.28476738e+18  1.48e+09 3.39e+05  1.10e+09     3s
+       6  -3.15759602e+16  4.02492796e+16  1.71e+08 3.91e+04  1.44e+08     3s
+       7  -2.93039052e+15  6.29078400e+15  3.72e+07 8.49e+03  3.53e+07     3s
+       8  -4.82277680e+14  1.94496633e+15  1.22e+07 2.79e+03  1.24e+07     4s
+       9  -4.06836182e+13  5.24233846e+14  2.59e+06 5.91e+02  2.97e+06     4s
+      10  -1.08129872e+13  2.79463618e+14  1.11e+06 2.54e+02  1.39e+06     4s
+      11  -6.51072739e+12  2.15907685e+14  7.96e+05 1.82e+02  1.01e+06     4s
+      12  -9.54111179e+11  1.14570790e+14  2.40e+05 5.48e+01  3.89e+05     4s
+      13  -5.13851060e+10  5.41443774e+13  6.42e+04 1.47e+01  1.29e+05     5s
+      14   3.14840778e+10  2.94097381e+13  1.97e+04 4.48e+00  5.35e+04     5s
+      15   2.96869236e+10  1.10322660e+13  4.33e+03 9.89e-01  1.64e+04     5s
+      16   2.96122199e+10  1.42624096e+12  3.39e+02 7.73e-02  1.85e+03     5s
+      17   3.48740499e+10  2.32568137e+11  3.05e+01 6.96e-03  2.53e+02     5s
+      18   3.81165648e+10  1.27943684e+11  9.61e+00 3.82e-03  1.14e+02     6s
+      19   3.99913417e+10  8.78639382e+10  4.32e+00 3.36e-03  6.07e+01     6s
+      20   4.14584277e+10  6.68389357e+10  1.94e+00 2.11e-03  3.21e+01     6s
+      21   4.23118432e+10  5.85474811e+10  1.09e+00 1.31e-03  2.05e+01     6s
+      22   4.32709294e+10  5.06918696e+10  4.11e-01 5.35e-04  9.35e+00     6s
+      23   4.37694534e+10  4.78240414e+10  1.94e-01 2.45e-04  5.10e+00     7s
+      24   4.41591973e+10  4.59586081e+10  7.11e-02 8.05e-05  2.26e+00     7s
+      25   4.43269757e+10  4.52924539e+10  3.26e-02 3.57e-05  1.21e+00     7s
+      26   4.44286161e+10  4.49490136e+10  1.46e-02 1.62e-05  6.53e-01     7s
+      27   4.44765274e+10  4.47983376e+10  7.93e-03 8.91e-06  4.04e-01     8s
+      28   4.45101026e+10  4.46967194e+10  3.68e-03 4.12e-06  2.34e-01     8s
+      29   4.45280074e+10  4.46442107e+10  2.00e-03 2.24e-06  1.46e-01     8s
+      30   4.45415923e+10  4.46051950e+10  9.15e-04 1.01e-06  7.98e-02     8s
+      31   4.45499155e+10  4.45818155e+10  4.08e-04 4.50e-07  4.00e-02     8s
+      32   4.45521961e+10  4.45755985e+10  2.18e-04 2.39e-07  2.94e-02     9s
+      33   4.45545719e+10  4.45691974e+10  1.24e-04 1.35e-07  1.83e-02     9s
+      34   4.45559462e+10  4.45655521e+10  7.28e-05 8.00e-08  1.21e-02     9s
+      35   4.45566733e+10  4.45636357e+10  4.70e-05 5.23e-08  8.74e-03     9s
+      36   4.45575286e+10  4.45613946e+10  2.22e-05 2.44e-08  4.85e-03    10s
+      37   4.45582742e+10  4.45594670e+10  4.88e-06 4.28e-09  1.50e-03    10s
+      38   4.45584623e+10  4.45590089e+10  1.32e-06 1.43e-09  6.86e-04    10s
+      39   4.45584758e+10  4.45590103e+10  1.26e-06 1.54e-09  6.71e-04    10s
+      40   4.45586050e+10  4.45586999e+10  1.44e-07 8.73e-11  1.19e-04    11s
+      41   4.45586331e+10  4.45586366e+10  3.00e-09 9.82e-11  4.34e-06    11s
+      42   4.45586342e+10  4.45586344e+10  5.12e-09 4.21e-09  2.64e-07    11s
+      43   4.45586342e+10  4.45586342e+10  5.12e-09 7.44e-09  1.99e-08    12s
+      44   4.45586342e+10  4.45586342e+10  6.12e-08 5.03e-09  8.00e-10    12s
+    
+    Barrier solved model in 44 iterations and 11.89 seconds (9.31 work units)
+    Optimal objective 4.45586342e+10
+    
+    
+    User-callback calls 0, time in user-callback 0.00 sec
+
+--- Reading solution for model GEP_QP
+--- Executing after solve: elapsed 0:00:23.075
+--- ModelF_new.gms(1136) 225 Mb
+*** Status: Normal completion
+--- Job ModelF_new.gms Stop 10/10/26 08:40:37 elapsed 0:00:23.947

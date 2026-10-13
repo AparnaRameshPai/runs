@@ -1,0 +1,163 @@
+--- Job ModelF_new.gms Start 10/10/26 08:42:02 52.4.0 d810124c WEX-WEI x86 64bit/MS Windows
+--- Applying:
+    D:\Chaitra\Programs\GAMS\gmsprmNT.txt
+--- GAMS Parameters defined
+    Input "D:\Chaitra\thesis_runs\runs\France Ratio\ModelF_2030_HydroScale_0.129_67.246TWh_999_999_26\ModelF_new.gms"
+    Output "D:\Chaitra\thesis_runs\runs\France Ratio\ModelF_2030_HydroScale_0.129_67.246TWh_999_999_26\ModelF_2030_HydroScale_0.129_67.246TWh_999_999_26.lst"
+    ScrDir "D:\Chaitra\thesis_runs\runs\France Ratio\ModelF_2030_HydroScale_0.129_67.246TWh_999_999_26\225a\"
+    SysDir D:\Chaitra\Programs\GAMS\
+    LogOption 2
+    LogFile "D:\Chaitra\thesis_runs\runs\France Ratio\ModelF_2030_HydroScale_0.129_67.246TWh_999_999_26\run.log"
+    AppendLog 1
+Licensee: Afzal Siddiqui                                 G260902+0003Ac-GEN
+          Stockholm University                                      DCE5282
+          225a\gamslice.dat
+          453eb9d2-b29a-43cf
+          node:41488306 mem:16 cores:8 ipport:57869 v:2                    
+          Course license for use within the course and related course work
+          The time-limited license stops working on : Apr 30, 2027
+System information: 8 physical cores and 16 Gb physical memory detected
+GAMS 52.4.0   Copyright (C) 1987-2026 GAMS Development. All rights reserved
+--- Starting compilation
+--- ModelF_new.gms(21) 2 Mb
+--- > Nordic_data_ModelF_new.gms(92) 4 Mb
+--- GDXin=D:\Chaitra\thesis_runs\runs\France Ratio\ModelF_2030_HydroScale_0.129_67.246TWh_999_999_26\consumption_se_2018.gdx
+--- GDX File ($gdxIn) D:\Chaitra\thesis_runs\runs\France Ratio\ModelF_2030_HydroScale_0.129_67.246TWh_999_999_26\consumption_se_2018.gdx
+--- > Nordic_data_ModelF_new.gms(97) 5 Mb
+--- GDXin=D:\Chaitra\thesis_runs\runs\France Ratio\ModelF_2030_HydroScale_0.129_67.246TWh_999_999_26\prices_se_2018.gdx
+--- GDX File ($gdxIn) D:\Chaitra\thesis_runs\runs\France Ratio\ModelF_2030_HydroScale_0.129_67.246TWh_999_999_26\prices_se_2018.gdx
+--- > Nordic_data_ModelF_new.gms(131) 7 Mb
+--- GDXin=D:\Chaitra\thesis_runs\runs\France Ratio\ModelF_2030_HydroScale_0.129_67.246TWh_999_999_26\netimport_se_2018.gdx
+--- GDX File ($gdxIn) D:\Chaitra\thesis_runs\runs\France Ratio\ModelF_2030_HydroScale_0.129_67.246TWh_999_999_26\netimport_se_2018.gdx
+--- > Nordic_data_ModelF_new.gms(357) 8 Mb
+--- GDXin=D:\Chaitra\thesis_runs\runs\France Ratio\ModelF_2030_HydroScale_0.129_67.246TWh_999_999_26\vre_se_2018.gdx
+--- GDX File ($gdxIn) D:\Chaitra\thesis_runs\runs\France Ratio\ModelF_2030_HydroScale_0.129_67.246TWh_999_999_26\vre_se_2018.gdx
+--- > Nordic_data_ModelF_new.gms(424) 10 Mb
+--- GDXin=D:\Chaitra\thesis_runs\runs\France Ratio\ModelF_2030_HydroScale_0.129_67.246TWh_999_999_26\inflow_ror_se_2018.gdx
+--- GDX File ($gdxIn) D:\Chaitra\thesis_runs\runs\France Ratio\ModelF_2030_HydroScale_0.129_67.246TWh_999_999_26\inflow_ror_se_2018.gdx
+--- > Nordic_data_ModelF_new.gms(444) 10 Mb
+--- GDXin=D:\Chaitra\thesis_runs\runs\France Ratio\ModelF_2030_HydroScale_0.129_67.246TWh_999_999_26\inflow_res_se_2018.gdx
+--- GDX File ($gdxIn) D:\Chaitra\thesis_runs\runs\France Ratio\ModelF_2030_HydroScale_0.129_67.246TWh_999_999_26\inflow_res_se_2018.gdx
+--- > Nordic_data_ModelF_new.gms(542) 11 Mb
+--- ModelF_new.gms(594) 11 Mb
+--- Starting execution: elapsed 0:00:00.064
+--- ModelF_new.gms(785) 49 Mb
+--- Generating QCP model GEP_QP
+--- ModelF_new.gms(787) 221 Mb
+---   648,678 rows  464,313 columns  1,861,653 non-zeroes
+---   245,282 nl-code  35,040 nl-non-zeroes
+--- Range statistics (absolute non-zero finite values)
+--- RHS       [min, max] : [ 4.123E-02, 7.472E+07] - Zero values observed as well
+--- Bound     [min, max] : [        NA,        NA] - Zero values observed as well
+--- Matrix    [min, max] : [ 1.315E-07, 1.213E+05]
+--- ModelF_new.gms(787) 218 Mb
+--- Executing GUROBI (Solvelink=2): elapsed 0:00:05.913
+
+    Gurobi           52.4.0 d810124c Jan 14, 2026          WEI x86 64bit/MS Window
+
+... GAMS/Gurobi full license.
+... GMO Q Extraction (ThreePass): 0.36s
+
+    Gurobi Optimizer version 13.0.0 build v13.0.0rc1 (win64 - Windows 11+.0 (26200.2))
+    
+    CPU model: AMD Ryzen 7 7435HS, instruction set [SSE2|AVX|AVX2]
+    Thread count: 8 physical cores, 16 logical processors, using up to 16 threads
+    
+    Non-default parameters:
+    MIPGap  0
+    MIPGapAbs  0
+    LogToConsole  0
+    
+    Optimize a model with 648677 rows, 464312 columns and 1730222 nonzeros (Max)
+    Model fingerprint: 0xdb5435f7
+    Model has 131430 linear objective coefficients
+    Model has 35040 quadratic objective terms
+    Coefficient statistics:
+      Matrix range     [1e-07, 1e+00]
+      Objective range  [1e-02, 1e+05]
+      QObjective range [3e-03, 2e+00]
+      Bounds range     [0e+00, 0e+00]
+      RHS range        [4e-02, 7e+07]
+    Presolve removed 223854 rows and 153962 columns
+    Presolve time: 0.82s
+    Presolved: 424823 rows, 310350 columns, 1300193 nonzeros
+    Presolved model has 35040 quadratic objective terms
+    Ordering time: 0.30s
+    
+    Barrier statistics:
+     Dense cols : 22
+     AA' NZ     : 1.778e+06
+     Factor NZ  : 8.293e+06 (roughly 400 MB of memory)
+     Factor Ops : 2.880e+08 (less than 1 second per iteration)
+     Threads    : 8
+    
+                      Objective                Residual
+    Iter       Primal          Dual         Primal    Dual     Compl     Time
+       0  -2.32987125e+19  2.33110008e+19  6.78e+09 1.55e+06  2.39e+09     2s
+       1  -1.52232655e+19  1.52349710e+19  5.47e+09 1.25e+06  1.93e+09     2s
+       2  -1.37782790e+19  1.37898420e+19  5.20e+09 1.19e+06  1.84e+09     2s
+       3  -1.20619783e+19  1.20735051e+19  4.87e+09 1.11e+06  1.84e+09     2s
+       4  -9.01114406e+18  9.02279385e+18  4.20e+09 9.57e+05  1.78e+09     3s
+       5  -2.76837306e+17  2.89044117e+17  6.61e+08 1.51e+05  4.45e+08     3s
+       6  -1.09328604e+16  1.65794917e+16  9.15e+07 2.09e+04  7.09e+07     3s
+       7  -1.04754880e+15  3.07751594e+15  1.97e+07 4.50e+03  1.73e+07     3s
+       8  -1.25790472e+14  9.45123407e+14  5.65e+06 1.29e+03  5.63e+06     4s
+       9  -1.35025973e+13  3.10514642e+14  1.35e+06 3.08e+02  1.53e+06     4s
+      10  -8.43872414e+12  2.43476358e+14  9.94e+05 2.27e+02  1.14e+06     4s
+      11  -4.54263202e+12  1.78046534e+14  6.60e+05 1.51e+02  7.65e+05     4s
+      12  -6.52265886e+11  9.78359365e+13  2.00e+05 4.55e+01  3.06e+05     4s
+      13  -1.71479027e+10  4.48320012e+13  5.16e+04 1.18e+01  9.83e+04     5s
+      14   3.31633405e+10  2.26974292e+13  1.38e+04 3.15e+00  3.82e+04     5s
+      15   3.18722796e+10  5.68767281e+12  2.07e+03 4.72e-01  7.94e+03     5s
+      16   3.40165308e+10  6.07635390e+11  1.08e+02 2.46e-02  7.40e+02     5s
+      17   4.09843987e+10  1.63460769e+11  6.12e+00 1.40e-03  1.55e+02     5s
+      18   4.31488773e+10  9.56099902e+10  1.54e+00 3.51e-04  6.61e+01     6s
+      19   4.43838282e+10  7.34717222e+10  7.28e-01 1.66e-04  3.66e+01     6s
+      20   4.51322046e+10  6.40912635e+10  4.21e-01 9.60e-05  2.38e+01     6s
+      21   4.58596541e+10  5.63624953e+10  2.05e-01 4.67e-05  1.32e+01     6s
+      22   4.64125772e+10  5.18514598e+10  8.69e-02 2.08e-05  6.83e+00     6s
+      23   4.64983764e+10  5.13092313e+10  6.99e-02 1.66e-05  6.04e+00     7s
+      24   4.65767931e+10  5.08588902e+10  5.70e-02 1.34e-05  5.38e+00     7s
+      25   4.69201790e+10  4.88962431e+10  1.30e-02 2.97e-06  2.48e+00     7s
+      26   4.70060874e+10  4.84806700e+10  7.70e-03 1.76e-06  1.85e+00     7s
+      27   4.70696935e+10  4.81872749e+10  5.01e-03 1.14e-06  1.40e+00     8s
+      28   4.71069194e+10  4.80529299e+10  2.87e-03 6.55e-07  1.19e+00     8s
+      29   4.71648508e+10  4.77908223e+10  1.34e-03 3.06e-07  7.86e-01     8s
+      30   4.72147857e+10  4.75885641e+10  5.67e-04 1.29e-07  4.69e-01     8s
+      31   4.72508948e+10  4.74553813e+10  2.26e-04 5.16e-08  2.57e-01     8s
+      32   4.72638128e+10  4.74136626e+10  1.31e-04 3.00e-08  1.88e-01     9s
+      33   4.72712442e+10  4.73906755e+10  9.36e-05 2.13e-08  1.50e-01     9s
+      34   4.72779143e+10  4.73702616e+10  6.04e-05 1.38e-08  1.16e-01     9s
+      35   4.72830902e+10  4.73547332e+10  3.81e-05 8.70e-09  8.99e-02    10s
+      36   4.72883953e+10  4.73391886e+10  2.29e-05 5.23e-09  6.38e-02    10s
+      37   4.72914101e+10  4.73306615e+10  1.76e-05 4.02e-09  4.93e-02    10s
+      38   4.72929617e+10  4.73263442e+10  1.35e-05 3.09e-09  4.19e-02    11s
+      39   4.72943867e+10  4.73224566e+10  1.04e-05 2.36e-09  3.52e-02    11s
+      40   4.72974854e+10  4.73141143e+10  5.01e-06 1.14e-09  2.09e-02    11s
+      41   4.72996302e+10  4.73084892e+10  2.19e-06 4.99e-10  1.11e-02    11s
+      42   4.73005524e+10  4.73061473e+10  9.33e-07 2.13e-10  7.02e-03    12s
+      43   4.73008772e+10  4.73053505e+10  6.72e-07 3.20e-10  5.61e-03    12s
+      44   4.73012080e+10  4.73045434e+10  4.08e-07 2.11e-10  4.19e-03    12s
+      45   4.73016303e+10  4.73035291e+10  1.52e-07 5.28e-11  2.38e-03    13s
+      46   4.73019534e+10  4.73027717e+10  3.35e-08 2.62e-10  1.03e-03    13s
+      47   4.73020211e+10  4.73026240e+10  1.80e-08 1.31e-10  7.57e-04    13s
+      48   4.73020345e+10  4.73025941e+10  1.59e-08 4.51e-10  7.02e-04    14s
+      49   4.73020847e+10  4.73024827e+10  9.34e-09 1.46e-10  5.00e-04    14s
+      50   4.73021753e+10  4.73022838e+10  1.05e-09 6.73e-11  1.36e-04    14s
+      51   4.73022004e+10  4.73022301e+10  1.86e-09 8.73e-11  3.72e-05    14s
+      52   4.73022086e+10  4.73022126e+10  1.86e-09 4.51e-10  5.06e-06    15s
+      53   4.73022098e+10  4.73022101e+10  3.73e-09 1.12e-09  3.36e-07    15s
+      54   4.73022099e+10  4.73022099e+10  7.45e-09 1.72e-09  4.59e-08    15s
+      55   4.73022099e+10  4.73022099e+10  6.55e-06 5.95e-09  9.10e-09    16s
+    
+    Barrier solved model in 55 iterations and 15.64 seconds (12.09 work units)
+    Optimal objective 4.73022099e+10
+    
+    
+    User-callback calls 0, time in user-callback 0.00 sec
+
+--- Reading solution for model GEP_QP
+--- Executing after solve: elapsed 0:00:26.815
+--- ModelF_new.gms(1136) 225 Mb
+*** Status: Normal completion
+--- Job ModelF_new.gms Stop 10/10/26 08:42:29 elapsed 0:00:27.492

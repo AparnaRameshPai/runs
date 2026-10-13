@@ -1,0 +1,9 @@
+--- orig/Nordic_data_ModelF_new.gms
++++ Scenario E/ModelF_2030_999_999_5/Nordic_data_ModelF_new.gms
+@@ -225,3 +225,3 @@
+-    C_max           Maximum cycles per reactor per year     /200/
+-    C_daily         Maximum cycles per reactor per day     /2/
+-    C_weekly        Maximum cycles per reactor per week     /5/
++    C_max           Maximum cycles per reactor per year     /5/
++    C_daily         Maximum cycles per reactor per day     /999/
++    C_weekly        Maximum cycles per reactor per week     /999/

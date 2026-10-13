@@ -1,0 +1,13 @@
+--- orig/Nordic_data_ModelF_new.gms
++++ Hydro Reduction/ModelF_2030_HydroScale_0.5_48.141TWh/Nordic_data_ModelF_new.gms
+@@ -466,0 +467,10 @@
++Scalar Hydro_Scale 'Scaling factor for Swedish hydro capacity, reservoir volume, and inflow (1=baseline)' /0.5/;
++
++Y_hyd(N,W)  = Y_hyd(N,W) * Hydro_Scale;
++RR_max(N,W) = RR_max(N,W) * Hydro_Scale;
++RR_min(N,W) = RR_min(N,W) * Hydro_Scale;
++RR_ini(N,W) = RR_ini(N,W) * Hydro_Scale;
++I(N,T,W)    = I(N,T,W) * Hydro_Scale;
++
++II_hourly_ror(N,T) = II_hourly_ror(N,T) * Hydro_Scale;
++II_hourly_res(N,T) = II_hourly_res(N,T) * Hydro_Scale;
